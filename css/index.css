@@ -159,13 +159,13 @@ body {
 .container header {
   display: flex;
   flex-direction: row-reverse;
-  width: 90%;
+  width: 100%;
   margin: 20px auto;
 }
 .container .top {
-  width: 90%;
+  width: 100%;
   margin: auto;
-  padding-bottom: 200px;
+  padding-bottom: 100px;
   background-color: #E1EAEC;
 }
 .container .top img {
@@ -176,7 +176,7 @@ body {
   font-size: 2.5rem;
 }
 .container .top h2 {
-  font-size: 3rem;
+  font-size: 2.5rem;
 }
 .container .top .topdiv {
   border-bottom: 1px solid grey;
@@ -196,22 +196,55 @@ body {
   font-weight: bold;
   font-size: 2rem;
 }
-.container .top .middle {
-  width: 90%;
-  margin: auto;
-  border: 1px solid red;
+.container .top div button:hover {
+  background-color: black;
+}
+.container .middle {
+  display: flex;
+  width: 100%;
+  margin: 20px auto;
+  line-height: 2rem;
+  justify-content: space-between;
+}
+.container .middle .wrapped {
+  display: flex;
+  flex-wrap: wrap;
+  width: 45%;
+}
+.container .middle h2 {
+  font-size: 2rem;
+}
+.container .middle .list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border: 1px solid grey;
+  width: 45%;
+}
+.container .middle .list p {
+  border: 1px solid grey;
+  padding: 2px auto;
+  padding-left: 3px;
 }
 .container .lower {
-  width: 90%;
-  margin: 0 auto;
+  width: 100%;
+  margin: 0px auto;
 }
-.container .lower table th {
-  text-align: left;
+.container .lower h2 {
+  font-size: 2rem;
 }
-.container .lower table td {
+.container .lower li {
   border: 1px solid grey;
-  padding: 4px 8px;
+  margin: 2px;
+  padding: 5px;
 }
-.container .lower tr {
-  padding: 0 10px;
+.container footer {
+  display: flex;
+  justify-content: center;
+  background-color: grey;
+  margin-top: 10px;
+}
+.container footer p {
+  color: white;
+  padding: 20px;
 }
