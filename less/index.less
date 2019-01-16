@@ -48,6 +48,11 @@ table {
 	border-spacing: 0;
 }
 
+//----VARIABLES-----
+@resume-blue: #E1EAEC;
+
+//----VARIABLES-----
+
 /* Set every element's box-sizing to border-box */
 * {
     box-sizing: border-box;
@@ -56,12 +61,15 @@ table {
 html, body {
 	height: 100%;
 	font-size: 62.5%;
+	font-family: Arial;
 }
 
 .container {
 
 	font-size: 1.6rem;
-	
+	max-width: 1000px;
+	margin: 0 auto;
+	;
 
 	h1 {
 		font-size: 5rem;
@@ -71,4 +79,98 @@ html, body {
 		font-size: 1.6rem;
 	}
 	
+	nav {
+		display: flex;
+		width: 35%;
+		justify-content: space-between;
+
+		a {
+			text-decoration: none;
+			color: black;
+		}
+	}
+
+	header {
+		display: flex;
+		flex-direction: row-reverse;
+		width: 90%;
+		margin: 20px auto;
+	}
+
+	.top {
+
+		
+		width: 90%;
+		margin: auto;
+		padding-bottom: 200px;
+		background-color: @resume-blue;
+
+		img {
+			margin-top: 50px;
+			width: 30%;
+		}
+
+		h3 {
+			font-size: 2.5rem;
+		}
+
+		h2 {
+			font-size: 3rem;
+		}
+
+		.topdiv {
+			border-bottom:1px solid grey;
+		}
+
+		div {
+			width: 90%;
+			margin: 10px auto;
+			padding-bottom: 10px;
+			line-height: 50px;
+
+			button {
+				padding: 5px 7%;
+				background-color: grey;
+				color: white;
+				border: 1px solid grey;
+				border-radius: 5px;
+				font-weight: bold;
+				font-size: 2rem;
+			}
+		}
+	
+
+	.middle {
+		width: 90%;
+		margin: auto;
+		border: 1px solid red;
+
+	}
+
+		
+	}
+
+
+	.lower {
+		
+		width: 90%;
+		margin:0 auto;
+
+
+	table th {
+		text-align: left;
+	}
+
+	table td {
+		border: 1px solid grey;
+		padding: 4px 8px;
+	}
+
+	tr {
+		padding: 0 10px;
+	}
+
+
+
+}
 }
