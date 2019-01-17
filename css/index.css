@@ -134,7 +134,7 @@ html,
 body {
   height: 100%;
   font-size: 62.5%;
-  font-family: Arial;
+  font-family: arial;
 }
 .container {
   font-size: 1.6rem;
@@ -162,6 +162,31 @@ body {
   width: 100%;
   margin: 20px auto;
 }
+@media (max-width: 500px) {
+  .container header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container header nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .container header nav a {
+    width: 100%;
+    color: black;
+    border: 1px solid grey;
+    padding: 10px;
+    font-size: 2rem;
+    margin: 2px auto;
+    text-align: center;
+  }
+  .container header nav a:hover {
+    background-color: grey;
+  }
+}
 .container .top {
   width: 100%;
   margin: auto;
@@ -181,13 +206,36 @@ body {
 .container .top .topdiv {
   border-bottom: 1px solid grey;
 }
-.container .top div {
+@media (max-width: 500px) {
+  .container .top .topdiv h3 {
+    text-align: center;
+  }
+  .container .top .topdiv h1 {
+    text-align: center;
+  }
+  .container .top .topdiv img {
+    display: flex;
+    margin: 20px auto;
+  }
+  .container .top .div2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .container .top .div2 button {
+    text-align: center;
+    padding: 10px 30px;
+  }
+  .container .top .div2 p {
+    margin-bottom: 20px;
+  }
+}
+.container div {
   width: 90%;
   margin: 10px auto;
   padding-bottom: 10px;
   line-height: 50px;
 }
-.container .top div button {
+.container div button {
   padding: 5px 7%;
   background-color: grey;
   color: white;
@@ -196,7 +244,7 @@ body {
   font-weight: bold;
   font-size: 2rem;
 }
-.container .top div button:hover {
+.container div button:hover {
   background-color: black;
 }
 .container .middle {
@@ -205,6 +253,11 @@ body {
   margin: 20px auto;
   line-height: 2rem;
   justify-content: space-between;
+}
+@media (max-width: 500px) {
+  .container .middle .wrapped p {
+    line-height: 20px;
+  }
 }
 .container .middle .wrapped {
   display: flex;
@@ -220,6 +273,7 @@ body {
   flex-wrap: wrap;
   border: 1px solid grey;
   width: 45%;
+  padding: 0px;
 }
 .container .middle .list p {
   border: 1px solid grey;
